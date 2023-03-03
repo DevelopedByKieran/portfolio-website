@@ -8,4 +8,4 @@ This portfolio site implements the following:
 - Simple interactivity with JS
 - Use of the command line and Git version control
 
-[Current progress:](https://delicate-tartufo-891bd3.netlify.app)
+[Check out my portfolio progress here](https://delicate-tartufo-891bd3.netlify.app)
