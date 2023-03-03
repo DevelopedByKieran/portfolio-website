@@ -61,8 +61,8 @@ header {
 
 /* Menu Icon (hidden by default) */
 
-.menu-icon {
-  width: 50px;
+#menu-icon {
+  font-size: 3rem;
   display: none;
 }
 
@@ -220,9 +220,7 @@ footer {
   gap: 1rem;
 }
 
-.socials-group {
-  /* margin-top: 1rem; */
-}
+
 .socials-group img {
   width: 50px;
   margin: 0 2rem;
@@ -308,7 +306,7 @@ footer {
   }
 
   .nav-links {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: start;
     position: absolute;
@@ -321,7 +319,7 @@ footer {
     padding: 2rem 0;
   }
 
-  .menu-icon {
+  #menu-icon {
     display: inline;
   }
   .card {
