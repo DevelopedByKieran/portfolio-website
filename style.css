@@ -210,8 +210,7 @@ main {
 /* Footer */
 
 footer {
-  /* margin-top: 5rem;
-  text-align: center; */
+  text-align: center;
   background-color: rgb(204, 204, 204);
   display: flex;
   align-items: center;
@@ -271,14 +270,19 @@ footer {
   .card {
     min-width: 50%;
   }
+  h1,
   h2,
-  h3 {
+  h3,
+  main {
     text-align: center;
   }
 
   .container-left ul li {
     text-align: left;
     margin: 3.5rem 0;
+  }
+  .container-right img {
+    width: 400px;
   }
 }
 
@@ -339,10 +343,21 @@ footer {
   .line-break {
     margin: 2.5rem 0;
   }
+
   .card {
     width: 300px;
     height: auto;
   }
+  .card-top {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+    .socials-group img {
+        margin: 0 .5rem;
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -358,3 +373,4 @@ footer {
     width: 40px;
   }
 }
+
