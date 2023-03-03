@@ -1,10 +1,11 @@
-/* General Styling */
+/* ----- General Styling ----- */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -15,12 +16,32 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    transition: .2s ease;
+}
+a:hover {
+    color: crimson;
 }
 
+ul {
+    list-style: none;
+}
+
+.line-break {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(184, 184, 184);
+    margin: 5rem 0;
+}
 /* Header / Nav */
 
 header {
-    margin-bottom: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #eeeeee;
+    padding: 1rem 10rem;
 }
 
 nav,
@@ -46,18 +67,18 @@ nav {
 }
 
 .nav-links {
-    list-style: none;
-    width: 400px;
+    width: 600px;
     justify-content: space-between;
     font-size: 1.5rem;
 }
 
-/* Main */
+/* ----- Main ----- */
 
 main {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 5rem;
 }
 
 .main-content h1 {
@@ -83,9 +104,49 @@ main {
     font-weight: 500;
 }
 
+
+.main-content a p {
+    color: rgb(41, 41, 41);
+    display: inline;
+}
+.main-content a img {
+    width: 20px;
+}
+
 .main-img {
     width: 500px;
     height: 500px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+/* ----- About Me ----- */
+
+#about h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-right img {
+    width: 500px;
+}
+
+.facts-list {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+.facts-list li {
+    margin: 2rem 0;
+}
+
+#secret-fact {
+    font-weight: 700;
+    cursor: pointer;
+    color: crimson;
 }

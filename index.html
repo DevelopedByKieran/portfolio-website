@@ -16,6 +16,9 @@
 
     <!-- Personal Styles -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- JS Script -->
+    <script src="script.js" defer></script>
   </head>
   <body>
     <!-- Header / Nav -->
@@ -29,23 +32,59 @@
             </div>
 
             <ul class="nav-links" role="presentation">
-                <a href=""><li>Home</li></a>
-                <a href=""><li>About</li></a>
+                <a href="#"><li>Home</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#what-can-i-do"><li>What can I do?</li></a>
                 <a href=""><li>Contact</li></a>
             </ul>
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
         <div class="main-content">
             <h1>Hello!</h1>
             <h2>I'm <span>Kieran.</span></h2>
             <p>I'm learning to be a <span>Web Developer!</span></p>
+            <a href="#about">
+                <p>Want to know more about me?</p>
+                <img src="./images/arrow-down.svg" alt="">
+            </a>
         </div>
 
         <div class="main-img-container">
             <img src="./images/bg-img-2.jpg" alt="" class="main-img">
         </div>
     </main>
+
+    <div class="line-break"></div>
+
+    <!-- About Me -->
+    <section id="about">
+        <h1>About Me</h1>
+        <div class="container">
+            <div class="container-left">
+                <h2>Here are some facts about me:</h2>
+                <ul class="facts-list">
+                    <li>✔️ I love to code!</li>
+                    <li>✔️ I enjoy playing video games!</li>
+                    <li>✔️ I live in the UK!</li>
+                    <li id="secret-fact">Click here for a secret fact...</li>
+                </ul>
+            </div>
+
+            <div class="container-right">
+                <img src="./images/coding-monitor-svgrepo-com.svg" alt="computer screen with code">
+            </div>
+        </div>
+    </section>
+
+    <div class="line-break"></div>
+
+    <!-- What Can I Do -->
+
+    <section id="what-can-i-do">
+
+    </section>
   </body>
 </html>
