@@ -8,3 +8,11 @@ secretFact.addEventListener('click', () => {
     secretFact.style.fontWeight === '400' ? secretFact.style.fontWeight = '700' : secretFact.style.fontWeight = '400';
     secretFact.style.color === 'black' ? secretFact.style.color = 'crimson' : secretFact.style.color = 'black';
 })
+
+// Date for footer
+
+let date = new Date();
+let year = date.getFullYear();
+
+const dateText = document.getElementById('current-date');
+dateText.innerHTML = year;
