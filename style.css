@@ -1,152 +1,208 @@
 /* ----- General Styling ----- */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    background: url('./images/v748-toon-107.jpg') fixed center;
-    padding: 2rem 10rem;
+  background: url("./images/v748-toon-107.jpg") fixed center;
+}
+
+main,
+section,
+footer {
+  padding: 2rem 10rem;
+}
+
+section h2 {
+  font-size: 3rem;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    transition: .2s ease;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s ease;
 }
 a:hover {
-    color: crimson;
+  color: crimson;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .line-break {
-    width: 100%;
-    height: 2px;
-    background-color: rgb(184, 184, 184);
-    margin: 5rem 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(184, 184, 184);
+  margin: 5rem 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 /* Header / Nav */
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    background-color: #eeeeee;
-    padding: 1rem 10rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: #eeeeee;
+  padding: 1rem 10rem;
 }
 
 nav,
 .nav-logo a,
 .nav-links {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 nav {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .nav-img {
-    width: 50px;
+  width: 50px;
 }
 
 .nav-logo a {
-    gap: 1rem;
+  gap: 1rem;
 }
 .nav-logo a span {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .nav-links {
-    width: 600px;
-    justify-content: space-between;
-    font-size: 1.5rem;
+  width: 600px;
+  justify-content: space-between;
+  font-size: 1.5rem;
 }
 
 /* ----- Main ----- */
 
 main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
 }
 
 .main-content h1 {
-    font-size: 5rem;
-    margin: 0;
+  font-size: 5rem;
+  margin: 0;
 }
 
 .main-content h2 {
-    font-size: 3rem;
-    font-weight: 400;
-    margin: 0;
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0;
 }
 .main-content h2 span {
-    /* color: #353535; */
-    color: crimson;
+  /* color: #353535; */
+  color: crimson;
 }
 
 .main-content p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 .main-content p span {
-    color: midnightblue;
-    font-weight: 500;
+  color: midnightblue;
+  font-weight: 500;
 }
-
 
 .main-content a p {
-    color: rgb(41, 41, 41);
-    display: inline;
+  color: rgb(41, 41, 41);
+  display: inline;
 }
 .main-content a img {
-    width: 20px;
+  width: 20px;
 }
 
 .main-img {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /* ----- About Me ----- */
 
-#about h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#about h3 {
+  font-size: 2rem;
 }
 
 .container-right img {
-    width: 500px;
+  width: 500px;
 }
 
 .facts-list {
-    margin-top: 1rem;
-    font-size: 1.5rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }
 .facts-list li {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 #secret-fact {
-    font-weight: 700;
-    cursor: pointer;
-    color: crimson;
+  font-weight: 700;
+  cursor: pointer;
+  color: crimson;
+}
+
+/* ---- What Can I Do ----- */
+
+.card-container {
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px 4px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.card-top svg {
+  width: 80px;
+}
+#css-logo {
+  width: 70px;
+}
+.card-top h3 {
+  font-size: 2.5rem;
+}
+
+.card-break {
+  margin: 1rem 0;
+}
+
+.card-bottom li {
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 5rem;
+  background-color: rgb(51, 51, 51);
+  color: white;
 }
