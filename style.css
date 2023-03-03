@@ -9,10 +9,7 @@
 
 body {
     background: url('./images/v748-toon-107.jpg') fixed center;
-}
-
-img {
-    max-width: 100%;
+    padding: 2rem 10rem;
 }
 
 a {
@@ -20,14 +17,10 @@ a {
     color: inherit;
 }
 
-h1 {
-    font-size: 10rem;
-}
-
 /* Header / Nav */
 
 header {
-    padding: 2rem 5rem;
+    margin-bottom: 5rem;
 }
 
 nav,
@@ -59,3 +52,40 @@ nav {
     font-size: 1.5rem;
 }
 
+/* Main */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-content h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+
+.main-content h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0;
+}
+.main-content h2 span {
+    /* color: #353535; */
+    color: crimson;
+}
+
+.main-content p {
+    font-size: 1.5rem;
+}
+.main-content p span {
+    color: midnightblue;
+    font-weight: 500;
+}
+
+.main-img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+}
