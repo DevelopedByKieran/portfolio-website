@@ -7,3 +7,5 @@ This portfolio site implements the following:
 - HTML and CSS
 - Simple interactivity with JS
 - Use of the command line and Git version control
+
+[Current progress:](https://delicate-tartufo-891bd3.netlify.app)
